@@ -26,7 +26,7 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
 1. **Clone the repo:**
    ```bash
    git clone <repo-url>
-   cd groq_mistral
+   cd LLM_RAG_Langchain_Embedding_FAISS_Gradio
    ```
 2. **Install dependencies:**
    ```bash
@@ -36,7 +36,7 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
    Example:
    ```yaml
    llm_models:
-     - name: "llama-3.1-8b-instant"
+     - name: "llama3-8b-8192"
        api_key: "YOUR_GROQ_API_KEY"
        api_base: "https://api.groq.com/openai/v1"
    embedding_models:
@@ -46,7 +46,7 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
    - For backward compatibility, the following keys are also supported:
      ```yaml
      groq_api_key: "YOUR_GROQ_API_KEY"
-     groq_model: "llama-3.1-8b-instant"
+     groq_model: "llama3-8b-8192"
      embedding_model: "all-MiniLM-L6-v2"
      ```
 4. **Run the app:**
