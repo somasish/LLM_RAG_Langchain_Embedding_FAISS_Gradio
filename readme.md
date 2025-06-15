@@ -43,12 +43,7 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
      - "all-MiniLM-L6-v2"
    ```
    - You can add as many LLMs and embedding models as you like.
-   - For backward compatibility, the following keys are also supported:
-     ```yaml
-     groq_api_key: "YOUR_GROQ_API_KEY"
-     groq_model: "llama3-8b-8192"
-     embedding_model: "all-MiniLM-L6-v2"
-     ```
+   
 4. **Run the app:**
    ```bash
    python rag_gradio_llm.py
