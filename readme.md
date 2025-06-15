@@ -1,10 +1,10 @@
-# LLM_RAG_Langchain_Embedding_FAISS_Gradio: Retrieval-Augmented Generation (RAG) with Gradio, LangChain, and Groq LLMs
+# LLM_RAG_Langchain_Embedding_FAISS_Gradio: Retrieval-Augmented Generation (RAG) with Gradio UI, LangChain, Groq and OpenAI LLMs
 
 This repository provides a modular, class-based Python project for Retrieval-Augmented Generation (RAG) using Gradio, LangChain, FAISS, HuggingFace embeddings, and Groq/OpenAI-compatible LLMs. It is designed for easy extension, best practices, and onboarding new LLM developers.
 
 ## Features
 - **File & URL Support:** Upload files (PDF, DOCX, CSV, TXT, etc.) or paste a public URL for processing.
-- **Model Selection:** Choose from multiple LLMs and embedding models via dropdowns in the UI. All model tokens and names are read from `config.yaml`.
+- **Model Selection:** Choose from multiple LLMs Like GPT, LLama and embedding models via dropdowns in the UI. All model tokens and names are read from `config.yaml`.
 - **Persistent Vectorstore:** Automatically saves and loads FAISS vectorstores for each unique file or URL, enabling fast reloading and reuse.
 - **Chunking & Embedding:** Documents are split into overlapping chunks and embedded using the selected HuggingFace model for efficient retrieval.
 - **Question Answering:** Ask questions about the uploaded or linked content using the selected LLM.
@@ -13,7 +13,7 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
 
 ## Project Structure
 ```
-├── groq_mistral/
+├── LLM_RAG_Langchain_Embedding_FAISS_Gradio/
 │   ├── rag_gradio_llm.py         # Main class-based RAG Gradio app (entry point)
 │   ├── config.yaml               # Model/API configuration
 │   ├── chunks/                   # Persistent vectorstore storage (auto-generated)
@@ -60,13 +60,16 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
 - Click **Load Document(s)** to process and index the content.
 - Enter your question in the textbox and click **Get Answer**.
 
-## For New LLM Coders
+## For New Coders
 - The main logic is in `rag_gradio_llm.py` inside the `RAGGradioApp` class.
 - All configuration is handled via `config.yaml`.
 - The code is modular, with clear docstrings and comments for each method.
 - You can extend the app by subclassing `RAGGradioApp` or adding new methods.
 - Debug print statements are included to help trace LLM calls and QA chain creation.
 - See the code comments for guidance on each step of the RAG pipeline.
+
+## Screenshot of app
+![app_screenshot](https://github.com/user-attachments/assets/fffb6322-dac9-4cb2-96ce-6b5f3d205864)
 
 ## Contributing
 - Fork the repo and create a feature branch.
@@ -77,5 +80,3 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
 ## License
 MIT 
 
-## Screenshot
-![app_screenshot](https://github.com/user-attachments/assets/fffb6322-dac9-4cb2-96ce-6b5f3d205864)
