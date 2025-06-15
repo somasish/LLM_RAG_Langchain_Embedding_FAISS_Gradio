@@ -1,12 +1,9 @@
-groq_api_key: "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"
-groq_model: "llama-3.1-8b-instant"  # or llama2-70b-4096, see groq docs
-embedding_model: "all-MiniLM-L6-v2"
 llm_models:
   - name: "llama3-8b-8192"
-    api_key: "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"
+    api_key: "*******GROQ_API_KEY******"
     api_base: "https://api.groq.com/openai/v1"
   - name: "gpt-3.5-turbo"
-    api_key: "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"
+    api_key: "******OPENAI_API_KEY*****"
     api_base: "https://api.openai.com/v1"
 embedding_models:
   - "all-MiniLM-L6-v2"
