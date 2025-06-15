@@ -1,0 +1,17 @@
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-openai
+groq  # If an official package exists; else, use requests as in your prior code
+pypdf
+docx2txt
+unstructured
+tiktoken
+sentence-transformers
+gradio
+requests
+beautifulsoup4
+pyyaml
+faiss-cpu
+langchain-huggingface
