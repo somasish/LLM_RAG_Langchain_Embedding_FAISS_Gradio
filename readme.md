@@ -1,4 +1,4 @@
-# groq_mistral: Retrieval-Augmented Generation (RAG) with Gradio, LangChain, and Groq LLMs
+# LLM_RAG_Langchain_Embedding_FAISS_Gradio: Retrieval-Augmented Generation (RAG) with Gradio, LangChain, and Groq LLMs
 
 This repository provides a modular, class-based Python project for Retrieval-Augmented Generation (RAG) using Gradio, LangChain, FAISS, HuggingFace embeddings, and Groq/OpenAI-compatible LLMs. It is designed for easy extension, best practices, and onboarding new LLM developers.
 
