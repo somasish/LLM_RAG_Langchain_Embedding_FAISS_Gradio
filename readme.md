@@ -76,3 +76,6 @@ This repository provides a modular, class-based Python project for Retrieval-Aug
 
 ## License
 MIT 
+
+## Screenshot
+![app_screenshot](https://github.com/user-attachments/assets/fffb6322-dac9-4cb2-96ce-6b5f3d205864)
